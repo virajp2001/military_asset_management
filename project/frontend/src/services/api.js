@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5001/api";
+const API_BASE_URL = process.env.BASE_URL
 
 const api = {
   get: (endpoint, options = {}) => {
@@ -35,3 +35,4 @@ const api = {
 };
 
 export { api };
+
